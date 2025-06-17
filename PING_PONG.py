@@ -27,14 +27,9 @@ class Player(GameSprite):
         if keys[K_DOWN] and self.rect.y < win_width - 70:
             self.rect.y += self.speed
 
-
-
-
-
 clock = time.Clock()
 FPS = 60
 game = True
-
 
 font.init()
 font1 = font.Font(None, 36)
@@ -46,21 +41,8 @@ while game:
     for e in event.get():
         if e.type == QUIT:
             game = False
-      
-           
-
-    
-   
-
-   
-    
- 
-    
-
-    
-    
-    display.update()
-    clock.tick(FPS)
+display.update()
+clock.tick(FPS)
     
 
   
